@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int array[10];
+	int n;
+	int o =0;
+	cout<<"Enter size of array "; cin>>n;
+	for (int i=0;i<n;i++)
+	{
+		cin>>array[i];
+	}
+
+	cout<<"you entered: "<<endl;
+	for (o=0; o<n;o++)
+	{
+		int *pointer = &array[o];
+		cout<<*pointer<<endl;
+	}
+	return 0;
+}
